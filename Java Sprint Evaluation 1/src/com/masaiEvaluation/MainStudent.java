@@ -20,6 +20,8 @@ public class MainStudent {
 			int marks = scan.nextInt();
 			
 			Student s1 = new Student(roll,name,marks);
+			s1.getData();
+			System.out.println("\n");
 		}
 		
 		
