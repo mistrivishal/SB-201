@@ -31,7 +31,6 @@ public class Student {
 		
 		s2.displayStudentDetails(s2.roll,s2.name,s2.marks);
 		
-		
 		s1 = null;
 		s2 = null;
 
