@@ -31,6 +31,10 @@ public class Student {
 	public Student() {
 
 	}
-	
-	
+	public void getData() {
+		System.out.println("Student Detail 01");
+		System.out.println("Student Roll Number: " + this.rollNumber);
+		System.out.println("Student Name: " + this.studentName);
+		System.out.println("Student Mark: " + this.marks);
+	}
 }
