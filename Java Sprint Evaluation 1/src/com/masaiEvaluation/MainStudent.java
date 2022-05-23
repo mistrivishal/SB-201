@@ -20,7 +20,7 @@ public class MainStudent {
 			int marks = scan.nextInt();
 			
 			Student s1 = new Student(roll,name,marks);
-			s1.getData();
+			s1.getData(i+1);
 			System.out.println("\n");
 		}
 		
