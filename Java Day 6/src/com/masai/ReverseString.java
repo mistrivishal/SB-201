@@ -13,7 +13,7 @@ public class ReverseString {
 			rev[n-i-1] = input.charAt(i);
 		}
 		
-		return Arrays.toString(rev);
+		return String.copyValueOf(rev);
 	}
 	
 	public static void main(String[] args){
@@ -26,7 +26,7 @@ public class ReverseString {
 		String result = ReverseString.reversString(originalString);
 		
 		System.out.println("Original String is :"+ originalString);
-		System.out.println("Reversed String is :"+ String.join(result, " "));
+		System.out.println("Reversed String is :"+ result);
 		
 	}
 
