@@ -11,7 +11,7 @@ public class PrimeNumArray {
 	        }
 	    }
 	    if(c!=0){
-	      return false; 
+	    	return false; 
 	    }
 	    else{
 	        return true;
@@ -20,11 +20,17 @@ public class PrimeNumArray {
 	
 	public int[] findAndReturnPrimeNumbers(int[] inputArray){
 		int n = 0;
-		int[] prime = new int[(n+1)];
 		for(int i=0;i<inputArray.length;i++) {
 			if(isPrime(inputArray[i])) {
-				prime[n] = inputArray[i];
 				n++;
+			}
+		}
+		int[] prime = new int[(n)];
+		int a = 0;
+		for(int i=0;i<inputArray.length;i++) {
+			if(isPrime(inputArray[i])) {
+				prime[a] = inputArray[i];
+				a++;
 			}
 		}
 		return prime;
