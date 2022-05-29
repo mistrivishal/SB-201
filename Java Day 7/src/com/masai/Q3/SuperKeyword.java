@@ -10,7 +10,6 @@ public class SuperKeyword {
 		Vehicle myDog = new Bike(); 
 		myDog.run();
 	}
-
 }	
 //Example:-
 
