@@ -1,4 +1,4 @@
-package com.masai;
+package com.masai.Q1;
 
 public class _1_Member {
 	String name;
