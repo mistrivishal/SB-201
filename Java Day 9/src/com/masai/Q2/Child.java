@@ -1,6 +1,6 @@
 package com.masai.Q2;
 
-public class Child extends Parent{
+final class Child extends Parent{
 
 	public void method1() {
 		System.out.println("From method 1 of Child");
