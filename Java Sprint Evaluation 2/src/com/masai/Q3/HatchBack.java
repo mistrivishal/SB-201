@@ -8,7 +8,7 @@ public class HatchBack extends Car{
 		setNumberOfKms(numberOfKMs);
 	}
 
-	public int bill() {
-		return farePerKm * getNumberOfKms();
-	}
+//	public int bill() {
+//		return farePerKm * getNumberOfKms();
+//	}
 }

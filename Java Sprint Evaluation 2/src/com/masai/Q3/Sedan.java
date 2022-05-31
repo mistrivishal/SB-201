@@ -7,7 +7,7 @@ public class Sedan extends Car{
 	public Sedan(int numberOfKMs) {
 		setNumberOfKms(numberOfKMs);
 	}
-	public int bill() {
-		return farePerKm * getNumberOfKms();
-	}
+//	public int bill() {
+//		return farePerKm * getNumberOfKms();
+//	}
 }
