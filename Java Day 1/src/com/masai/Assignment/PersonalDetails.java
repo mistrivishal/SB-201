@@ -1,3 +1,5 @@
+package com.masai.Assignment;
+
 public class PersonalDetails{
 
 	public static void main(String[] args){
