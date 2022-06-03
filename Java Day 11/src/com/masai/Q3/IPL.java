@@ -35,19 +35,23 @@ public class IPL {
 				Stadium s = Stadium.valueOf(stadium);
 				homeTeamStadium(s);
 				break;
-			}else if(stadium.equals(Stadium.EDEN_GARDENS_STADIUM.toString())) {
+			}
+			else if(stadium.equals(Stadium.EDEN_GARDENS_STADIUM.toString())) {
 				Stadium s = Stadium.valueOf(stadium);
 				homeTeamStadium(s);
 				break;
-			}else if(stadium.equals(Stadium.M_CHINNASWAMY_STADIUM.toString())) {
+			}
+			else if(stadium.equals(Stadium.M_CHINNASWAMY_STADIUM.toString())) {
 				Stadium s = Stadium.valueOf(stadium);
 				homeTeamStadium(s);
 				break;
-			}else if(stadium.equals(Stadium.WANKHEDE_STADIUM.toString())) {
+			}
+			else if(stadium.equals(Stadium.WANKHEDE_STADIUM.toString())) {
 				Stadium s = Stadium.valueOf(stadium);
 				homeTeamStadium(s);
 				break;
-			}else {
+			}
+			else {
 				System.out.println("Enter valid Stadium Name: ");
 				stadium = sc.next();
 			}
