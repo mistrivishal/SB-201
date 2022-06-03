@@ -2,7 +2,7 @@ package com.masai.Q2;
 
 import java.util.Scanner;
 
-public class Mobile {
+public class MobileUsingArray {
 	
 	static String[] outdatedModels = {"note4","note5","note6","note7"};
 	
@@ -61,7 +61,7 @@ public class Mobile {
 		for(int i=0;i<models.length;i++) {
 //			System.out.println(models[i][0]);
 //			System.out.println(models[i][1]);
-			Mobile.searchOutdatedModel(models[i][0],models[i][1]);
+			MobileUsingArray.searchOutdatedModel(models[i][0],models[i][1]);
 			System.out.println("\n********************************\n");
 		}
 	}
