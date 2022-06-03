@@ -6,17 +6,25 @@ public class Mobile {
 	
 	static String[] outdatedModels = {"note4","note5","note6","note7"};
 	
-	public static void searchOutdatedModel(String name, String modelNo){
+	public static void searchOutdatedModel(String []...modelNo){
 		
 		if(modelNo!=null) {
 			
 			for (String outdatedModel : outdatedModels) {
-				if(modelNo.equalsIgnoreCase(outdatedModel)) {
-					System.out.println(name + " " + modelNo + "_OUTDATED");
-					break;
-				}else {
-					System.out.println(name + " " + modelNo + "_NOT_OUTDATED");
-					break;
+				for(String[] x : modelNo) {
+					if(x[1].equalsIgnoreCase(outdatedModel)) {
+						
+						System.out.println(x[0] + " " + x[1] + "_OUTDATED");
+						System.out.println("\n********************************\n");
+						break;
+						
+					}else {
+						
+						System.out.println(x[0] + " " + x[1] + "_NOT_OUTDATED");
+						System.out.println("\n********************************\n");
+						break;
+						
+					}
 				}
 			}
 		}
@@ -58,11 +66,8 @@ public class Mobile {
 			System.out.println("\n********************************\n");
 		}
 		
-		for(int i=0;i<models.length;i++) {
-//			System.out.println(models[i][0]);
-//			System.out.println(models[i][1]);
-			Mobile.searchOutdatedModel(models[i][0],models[i][1]);
-			System.out.println("\n********************************\n");
-		}
+		//Outdated mobile search method call with var args:-
+		
+		Mobile.searchOutdatedModel(models);
 	}
 }
