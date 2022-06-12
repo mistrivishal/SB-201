@@ -15,12 +15,12 @@ public class Main {
 			String date = sc.next();
 			double bonus = EmployeeBonus.getBonus(date);
 			System.out.println("Your bonus is: Rs." + bonus);
-			
-		}catch(InvalidAge ia) {
-			System.out.println(ia.getMessage());
-			
-		}catch(InvalidDateFormat idf) {
+		}
+		catch(InvalidDateFormat idf) {
 			System.out.println(idf.getMessage());
+		}
+		catch(InvalidAge ia) {
+			System.out.println(ia.getMessage());
 		}
 	}
 }
