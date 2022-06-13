@@ -38,7 +38,5 @@ public class EmployeeBonus {
 			InvalidDateFormat idf = new InvalidDateFormat("please enter the date in proper format");
 			throw idf;
 		}
-	
-		
 	}
 }
