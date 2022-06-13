@@ -17,7 +17,7 @@ public class Product {
 	}
 	@Override
 	public String toString() {
-		return "\nProduct Name: " + name + "\nPrice: " + price + "C\nompany: " + company + "\nCount: " + count;
+		return "\n**************\nProduct Name: " + name + "\nPrice: " + price + "C\nompany: " + company + "\nCount: " + count + "\n**************";
 	}
 	public String getName() {
 		return name;

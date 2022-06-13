@@ -8,9 +8,11 @@ public class Ecommerce {
 	List<Product> productList=new ArrayList<>();
 	
 	public void addProductToList(Product product){
+		int x = product.getCount();
 		if(productList.contains(product)) {
-			int x = product.getCount() + product.getCount();
-			product.setCount(x);
+			int y = productList.indexOf(product);
+			Product p1 = productList.get(y);
+			p1.setCount(x + p1.count);
 		}
 		else {
 			productList.add(product);
