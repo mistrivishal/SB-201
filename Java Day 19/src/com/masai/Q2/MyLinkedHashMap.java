@@ -1,4 +1,4 @@
-package com.masai.Q2;
+	package com.masai.Q2;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -8,7 +8,7 @@ public class MyLinkedHashMap {
 	
 	public static void main(String[] args) {
 		
-		LinkedHashMap<String,String> myLinkMap = new LinkedHashMap();
+		LinkedHashMap<String,String> myLinkMap = new LinkedHashMap<>();
 		
 		myLinkMap.put("Maharashtra", "Mumbai");
 		myLinkMap.put("Gao", "Panaji");
