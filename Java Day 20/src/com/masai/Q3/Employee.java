@@ -35,6 +35,8 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "\nEmployeeId: " + empId + "\nempName: " + empName + "\nsalary: " + salary + "\n=====================";
+		return "\nEmployeeId: " + empId + "\nempName: " + empName + "\nsalary: " + salary + "\n~~~~~~~~~~~~~~~~~";
 	}
+	
+//	----O----X----O----
 }
