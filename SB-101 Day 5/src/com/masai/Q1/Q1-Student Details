@@ -1,0 +1,104 @@
+mysql> create table Student(
+    -> S_ID varchar(3) primary key,
+    -> S_Name varchar(17),
+    -> S_Address varchar(20),
+    -> S_Phone int(10),
+    -> S_Age int
+    -> );
+
+mysql> insert into Student values
+	->('S1', 'RAM', 'DELHI', '9455123451', 18),
+	->('S2', 'RAMESH', 'GURGAON', '9652431543', 18),
+	->('S3', 'SUJIT', 'Chandigarh', '9156253131', 20),
+	->('S4', 'SURESH', 'DELHI', '9156768971', 18),
+	->('S5', 'Ratan', 'Delhi', '9567890876', 20)
+	->;
+
+mysql> select * from student;
+
+	OUTPUT:
+    *******
+	+------+--------+------------+------------+-------+
+	| s_id | S_Name | S_Address  | S_Phone    | S_Age |
+	+------+--------+------------+------------+-------+
+	| S1   | RAM    | DELHI      | 9455123451 |    18 |
+	| S2   | RAMESH | GURGAON    | 9652431543 |    18 |
+	| S3   | SUJIT  | Chandigarh | 9156253131 |    20 |
+	| S4   | SURESH | DELHI      | 9156768971 |    18 |
+	| S5   | Ratan  | Delhi      | 9567890876 |    20 |
+	+------+--------+------------+------------+-------+
+
+
+mysql> create table course_table(
+    -> C_id varchar(2),
+    -> C_name varchar(17)
+    -> );
+
+mysql> insert into course_table values
+    -> ('C1', 'DSA'),
+    -> ('C2', 'JAVA'),
+    -> ('C3', 'MERN')
+    -> ;
+
+mysql> select * from course_table;
+
+	OUTPUT:
+    *******
+	+------+--------+
+	| C_id | C_name |
+	+------+--------+
+	| C1   | DSA    |
+	| C2   | JAVA   |
+	| C3   | MERN   |
+	+------+--------+
+
+mysql> create table Student_course_table(
+    -> S_id varchar(2),
+    -> C_id varchar(2),
+    -> foreign key (Scid) references student(s_id)
+    -> );
+
+
+mysql> insert into Student_course_table values
+    -> ('S1', 'C1'),
+    -> ('S1', 'C3'),
+    -> ('S2', 'C1'),
+    -> ('S3', 'C2'),
+    -> ('S4', 'C2'),
+    -> ('S4', 'C3'),
+    -> ('S5', 'C2')
+    ->;
+
+mysql> select * from student_course_table;
+	
+	OUTPUT:
+    *******
+	+------+------+
+	| S_id | C_id |
+	+------+------+
+	| S1   | C1   |
+	| S1   | C3   |
+	| S2   | C1   |
+	| S3   | C2   |
+	| S4   | C2   |
+	| S4   | C3   |
+	| S5   | C2   |
+	+------+------+
+
+
+mysql> select student.s_id,s_name,s_address,s_phone,s_age from student
+    ->  INNER JOIN
+    ->  student_course_table on student_course_table.s_id = student.s_id
+    ->  AND
+    ->  student.s_address = 'delhi'
+    ->  AND
+    ->  student_course_table.c_id = 'c2';
+
+    OUTPUT:
+    *******
+	+------+--------+-----------+------------+-------+
+	| s_id | s_name | s_address | s_phone    | s_age |
+	+------+--------+-----------+------------+-------+
+	| S4   | SURESH | DELHI     | 9156768971 |    18 |
+	| S5   | Ratan  | Delhi     | 9567890876 |    20 |
+	+------+--------+-----------+------------+-------+

@@ -1,0 +1,16 @@
+Explain what is a PK, Candidate Key, Prime Attributes, Non-prime Attributes ?
+
+Primary Key:-
+	Primary Key is the unique key in the table which uniquely identifies the data from the table
+	and primary key can not be null, the table have only one primary key it made of one or more column in the table;
+
+Candidate Key:-
+	Candidate key is the is the subset of the super key which also identifies the data from the table
+	uniquely and table can have one or more candidate keys(columns)
+	
+Prime Attributes:-
+ 	Prime Attributes are those columns which are present in candidate keys
+ 	
+NON-Prime Attributes:-
+	Non-Prime Attributes are those who are not part of the candidate keys;
+	

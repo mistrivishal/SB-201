@@ -1,0 +1,19 @@
+Q2:- List all the movies by their ratings in descending order
+	 
+mysql> select mt.title,mr.rating from Movie_Table mt,Movie_Rating_Table mr
+    -> where
+    -> mt.id = mr.movie_id
+    -> order by mr.rating desc;
+    
+    Option:
+    ------
+	+-----------------+--------+
+	| title           | rating |
+	+-----------------+--------+
+	| Civil War       |    8.2 |
+	| Toy Story 2     |      8 |
+	| The Incredibles |      8 |
+	| Monsters, Inc.  |    7.9 |
+	| Toy Story       |    7.4 |
+	| A Bug_s Life    |    6.4 |
+	+-----------------+--------+

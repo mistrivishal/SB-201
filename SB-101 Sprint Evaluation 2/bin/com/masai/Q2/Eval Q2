@@ -1,0 +1,34 @@
+
+
+What is TRANSACTION :-
+
+In the DBMS transaction is the set of or group of the logical 
+operations to perform the specific task or action 
+In transaction A group of transaction is said to complete when 
+we commit the code else we can rollover the action we did in the 
+logical part before commiting;
+
+What is ACID properties:-
+
+Basically ACID is the short form of the four key properties of the transaction,
+i.e.
+1. Atomicity,
+2. Consistency,
+3. Isolation,
+   &
+4. Durability.
+
+1. Atomicity:- It is the property of transaction which perforemed on the exchange of data,
+			   eg. whenever we want to transfer the fund from one account to another the
+			   whole cycle needs to be completed like debit and credit should be completed;
+			   
+2. Consistency:- Consistency is the property that keep data consistent through out the 
+				 transaction process which means data debited from one account is the same 
+				 data credited to another one should be equal;
+				 
+3. Isolation:- While the process of the transaction the data is ISolated and invisible to 
+ 			   other transaction process and keep data safe;
+ 			   
+4. Durability:-  Is basically successful exchange of the data an not left undone the process
+                IT ENSURES THE COMPLETION OF PROCESS IN NOT MATTER WAHT HAPPENS AND PROCESS WILL NOT BE REVERSED
+ 

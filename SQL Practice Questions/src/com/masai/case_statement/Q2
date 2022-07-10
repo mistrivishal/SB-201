@@ -1,0 +1,28 @@
+Q2.	write the query to display the vacation hours for salaried faculty based on their
+	working hours. If working hours <=50 update their vacation hours to ‘not allowed’,
+	working hours <=80 update their vacation hours to 20, working hours <=120 update
+	their vacation hours to 40.
+
+
+Query:-
+-----------------------------------------------------------------------------------------
+
+mysql> SELECT *, CASE
+    -> WHEN
+    -> Working_Hours <= 50 THEN 'Not Allowed'
+    -> WHEN
+    -> Working_Hours <= 80 AND Working_Hours > 50 THEN '20'
+    -> WHEN
+    -> Working_Hours <= 120 AND Working_Hours > 80 THEN '40'
+    -> END
+    -> as Vacation_Hours FROM Faculty_Table;
++-----------+---------+--------------------------------+--------+--------+---------------+----------------+
+| FacultyID | Name    | Department                     | Gender | Salary | Working_hours | Vacation_Hours |
++-----------+---------+--------------------------------+--------+--------+---------------+----------------+
+|         1 | Aakash  | Computer Science               | M      |  50000 |            45 | Not Allowed    |
+|         2 | Sahil   | Electronics and Communication  | M      |  25000 |            50 | Not Allowed    |
+|         3 | John    | Humanities and Social Sciences | M      | 100000 |            60 | 20             |
+|         4 | Shelley | Computer Science               | F      |  75000 |            80 | 20             |
+|         5 | Anannya | Computer Science               | F      |  45000 |           100 | 40             |
+|         6 | Sia     | Humanities and Social Sciences | F      |  60000 |            40 | Not Allowed    |
++-----------+---------+--------------------------------+--------+--------+---------------+----------------+

@@ -34,7 +34,7 @@ mysql> desc city;
 	| Population  | int         | YES  |     | NULL    |       |
 	+-------------+-------------+------+-----+---------+-------+
 		    
-mysql> insert into CITY values
+mysql> insert into CITY values(
 	-> (3878 , 'Scottsdale' , 'USA' , 'Arizona' , 202705),
 	-> (3965 , 'Corona' , 'USA' , 'California' , 90000),
 	-> (3973 , 'Concord' , 'USA' , 'California' , 121780),

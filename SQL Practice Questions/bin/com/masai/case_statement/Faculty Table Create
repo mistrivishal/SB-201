@@ -1,0 +1,29 @@
+mysql> CREATE TABLE Faculty_Table(
+    ->  FacultyID int,
+    ->  Name varchar(18),
+    ->  Department varchar(20),
+    ->  Gender varchar(10),
+    ->  Salary int,
+    ->  Working_hours int
+    ->  );
+    
+mysql>  INSERT INTO Faculty_Table VALUES
+    -> (001, 'Aakash', 'CS', 'M', 50000, 45),
+    -> (002, 'Sahil', 'EC', 'M', 25000, 50),
+    -> (003, 'John', 'HSS', 'M', 100000, 60),
+    -> (004, 'Shelley', 'CS', 'F', 75000, 80),
+    -> (005, 'Anannya', 'CS', 'F', 45000, 100),
+    -> (006, 'Sia', 'HSS', 'F', 60000, 40)
+    ->  ;
+
+mysql> SELECT * FROM Faculty_Table;
++-----------+---------+------------+--------+--------+---------------+
+| FacultyID | Name    | Department | Gender | Salary | Working_hours |
++-----------+---------+------------+--------+--------+---------------+
+|         1 | Aakash  | CS         | M      |  50000 |            45 |
+|         2 | Sahil   | EC         | M      |  25000 |            50 |
+|         3 | John    | HSS        | M      | 100000 |            60 |
+|         4 | Shelley | CS         | F      |  75000 |            80 |
+|         5 | Anannya | CS         | F      |  45000 |           100 |
+|         6 | Sia     | HSS        | F      |  60000 |            40 |
++-----------+---------+------------+--------+--------+---------------+
