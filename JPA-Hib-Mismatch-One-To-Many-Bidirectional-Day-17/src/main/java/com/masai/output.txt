@@ -1,0 +1,32 @@
+mysql> create database One_To_Many_bidirectional_mapping;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> use One_To_Many_bidirectional_mapping
+Database changed
+mysql> show tables;
++---------------------------------------------+
+| Tables_in_one_to_many_bidirectional_mapping |
++---------------------------------------------+
+| department                                  |
+| employee                                    |
+| hibernate_sequence                          |
++---------------------------------------------+
+3 rows in set (0.01 sec)
+
+mysql> select * from department;
++--------+------------+-----------+
+| deptId | dname      | location  |
++--------+------------+-----------+
+|      1 | Operations | Bengalore |
++--------+------------+-----------+
+1 row in set (0.00 sec)
+
+mysql> select * from employee;
++-------+--------------+---------+--------+--------+
+| empId | address      | ename   | salary | deptID |
++-------+--------------+---------+--------+--------+
+|     2 | Bihar        | Vikas   |  40000 |      1 |
+|     3 | UttarPradesh | Darshan |  50000 |      1 |
+|     4 | Pune         | Shakti  | 100000 |      1 |
++-------+--------------+---------+--------+--------+
+3 rows in set (0.00 sec)
