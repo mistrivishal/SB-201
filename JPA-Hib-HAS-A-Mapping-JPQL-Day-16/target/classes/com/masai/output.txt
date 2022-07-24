@@ -1,0 +1,32 @@
+mysql> Show tables;
++-------------------------+
+| Tables_in_has_a_mapping |
++-------------------------+
+| emp_address             |
+| employee                |
+| hibernate_sequence      |
++-------------------------+
+
+mysql> select * from employee;
++-------+--------+------------+---------+
+| empID | gender | name       | salary  |
++-------+--------+------------+---------+
+|     1 | M      | Raju       |   20000 |
+|     2 | M      | Shyam      |   30000 |
+|     3 | M      | BabuBhaiya | 1000000 |
+|     4 | F      | Anuradha   |   40000 |
++-------+--------+------------+---------+
+
+mysql> select * from emp_address;
++--------+-----------+---------+-------+--------+
+| emp_Id | city      | pincode | state | type   |
++--------+-----------+---------+-------+--------+
+|      1 | Bengalore | 560034  | KA    | Office |
+|      1 | Pune      | 420011  | MH    | Home   |
+|      2 | Kanpur    | 208001  | UP    | Home   |
+|      2 | Mumbai    | 230532  | MH    | Office |
+|      3 | Mumbai    | 400008  | MH    | Office |
+|      3 | Kolhapur  | 416001  | MH    | Home   |
+|      4 | Mumbai    | 400006  | MH    | Office |
+|      4 | Patna     | 804406  | BH    | Home   |
++--------+-----------+---------+-------+--------+
