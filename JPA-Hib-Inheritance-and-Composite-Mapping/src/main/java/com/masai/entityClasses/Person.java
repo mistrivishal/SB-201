@@ -9,7 +9,7 @@ import javax.persistence.InheritanceType;
 
 @Entity
 @Inheritance(strategy=InheritanceType.JOINED)
-public class Person {
+abstract class Person {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
