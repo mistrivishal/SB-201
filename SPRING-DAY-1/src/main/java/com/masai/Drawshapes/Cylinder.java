@@ -1,13 +1,9 @@
 package com.masai.Drawshapes;
 
-public class Cylinder implements Shape{
+public class Cylinder{
 	
 	public void draw() {
 		System.out.println("You have drawn Cylinder.");
 	}
 	
-	@Override
-	public void drawShape() {
-		draw();
-	}
 }
