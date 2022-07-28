@@ -10,6 +10,7 @@ public class Runner {
 		ApplicationContext apx = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		apx.getBean(Triangle.class,"tr").draw();
+		
 		apx.getBean(Circle.class,"c").draw();
 		apx.getBean(Cylinder.class,"cy").draw();
 		
