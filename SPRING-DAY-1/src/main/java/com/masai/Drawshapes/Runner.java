@@ -1,12 +1,15 @@
 package com.masai.Drawshapes;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class Runner {
 	
 	public static void main(String[] args) {
 		
-		DrawShapes ds = new DrawShapes();
+		ApplicationContext apx = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		ds.setS(new Triangle());
+		DrawShapes ds = apx.getBean(DrawShapes.class,"ds");
 		
 		ds.draw();
 		

@@ -4,7 +4,14 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="..." class="..." />
+	<bean id="tr" class="com.masai.Drawshapes.Triangle" />
+	<bean id="c" class="com.masai.Drawshapes.Circle" />
+	<bean id="cy" class="com.masai.Drawshapes.Cylinder" />
 	
+	
+	<bean id="ds" class="com.masai.Drawshapes.DrawShapes" >
+		<property name="s" ref="tr" />
+	</bean>
+
 
 </beans>
