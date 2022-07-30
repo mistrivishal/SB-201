@@ -11,4 +11,12 @@
 		<property name="service" ref="sL" />
 		
 	</bean>
+	
+	<bean id="bL" class="com.masai.beanclasslifecycle.BeanLife"  init-method="initialize" destroy-method="destroy">
+		
+		<property name="num" value="1001" />
+		
+	</bean>
+	
+	
 </beans>
