@@ -1,0 +1,9 @@
+Day 1 :- Tight coupling and loose coupling ; 
+		 Spring IOC ;
+		 Type of Dependency injection:- Setter injection, constructor injection ; 
+
+Day 2 :- Calculator using service layer and presentation layer using IOC ;
+		 Steps involved in the bean life cycle ;
+		 Initialization phase and destruction-phase, 
+		 (initMethod() and user-defined destroy(), close() methods) ;
+		 singleton and prototype scope of beans;
