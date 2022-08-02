@@ -1,7 +1,9 @@
 package com.masai.Q2;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -43,5 +45,18 @@ public class AppConfig2 {
 		return st;
 		
 	}
-
+	
+	@Bean
+	public Map<Student, String> theMap(){
+		
+		Map<Student, String> theMap = new HashMap<>();
+		
+		for(int i=0;i<5;i++) {
+			theMap.put(students().get(i), cities().get(i));
+		}
+		
+		return theMap;
+		
+	}
+	
 }
