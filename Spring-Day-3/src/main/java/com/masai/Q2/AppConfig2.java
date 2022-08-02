@@ -5,28 +5,41 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
 
 @Configuration
 @ComponentScan(basePackages = "com.masai.Q2")
+@PropertySource(value = "a.properties")
 public class AppConfig2 {
 	
+	@Value("#{'${cities}'.split(',')}")
+	public List<String> city;
+//	cities=Mumbai,Pune,Nashik,Bengalore,Chennai
 	
+	@Autowired
+	public Environment ev;
 	
 	@Bean
 	public List<String> cities(){
 		
-		List<String> str = new ArrayList<>();
+		List<String> cities = new ArrayList<>();
 		
-		str.add("Mumbai");
-		str.add("Pune");
-		str.add("Nashik");
-		str.add("Bengalore");
-		str.add("Chennai");
+		cities.addAll(city);
 		
-		return str;		
+//		cities.add(ev.getProperty("c1"));
+//		cities.add(ev.getProperty("c2"));
+//		cities.add(ev.getProperty("c1"));
+//		cities.add(ev.getProperty("c2"));
+//		cities.add(ev.getProperty("c1"));
+		
+		
+		return cities ;
 	}
 	
 	
