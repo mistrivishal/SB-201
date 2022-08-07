@@ -10,4 +10,4 @@ What is the role of request Dispatcher Servlet?
 -----------------------------------------------
 	The DispatcherServlet is the front controller in Spring web applications. It's used to create 
 	web applications and REST services in Spring MVC. In a traditional Spring web application, this 
-	servlet is defined in the web. xml file.
+	servlet is defined in the web. xml.
