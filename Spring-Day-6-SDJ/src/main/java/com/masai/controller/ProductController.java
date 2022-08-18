@@ -40,7 +40,7 @@ public class ProductController {
 	}
 	
 	@GetMapping("products")
-	public ResponseEntity<List<Product>> getAllProduct(){
+	public ResponseEntity<List<Product>> getProduct(){
 		
 		List<Product> products = pService.getAllProducts();
 		
