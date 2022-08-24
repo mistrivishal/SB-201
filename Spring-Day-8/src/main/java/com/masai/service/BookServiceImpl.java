@@ -59,6 +59,7 @@ public class BookServiceImpl implements BookService {
 			BookDTO bt = new BookDTO();
 			bt.setName(b.getName());
 			bt.setAuthor(b.getAuthor().getName());
+			bt.setCategory(b.getCategory());
 			bt.setPublication(b.getPublication());
 			bt.setPrice(b.getPrice());
 			bt.setPages(b.getPages());
@@ -82,6 +83,7 @@ public class BookServiceImpl implements BookService {
 		BookDTO bt = new BookDTO();
 		bt.setName(b.getName());
 		bt.setAuthor(b.getAuthor().getName());
+		bt.setCategory(b.getCategory());
 		bt.setPublication(b.getPublication());
 		bt.setPrice(b.getPrice());
 		bt.setPages(b.getPages());
